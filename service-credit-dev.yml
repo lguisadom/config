@@ -24,3 +24,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:8087/eureka
     #enabled: false
+
+#Endpoints Eureka URL
+config-eureka:
+  base:
+    customer:
+      endpoint: 'http://service-customer/api/v1/customer'
