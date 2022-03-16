@@ -4,6 +4,10 @@ application:
 
 server:
   port: 10085
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
 
 spring:
   application:
