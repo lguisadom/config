@@ -1,0 +1,26 @@
+application:
+  config:
+    description: Profile desarrollo
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: service-customer
+  cloud:
+    config:
+      profile: dev
+
+  data:
+    mongodb:
+      database: 'customerdb'
+      host: 'mongo'
+      port: 27017
+
+#Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8087/eureka
+    #enabled: false
