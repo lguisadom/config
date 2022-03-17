@@ -1,6 +1,6 @@
 application:
   config:
-    description: Profile Development
+    description: Profile default
 
 server:
   port: 8088
