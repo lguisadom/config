@@ -3,7 +3,7 @@ application:
     description: Profile desarrollo
 
 server:
-  port: 8082
+  port: 10182
 
 spring:
   application:

@@ -1,0 +1,54 @@
+application:
+  config:
+    description: Profile default
+
+server:
+  port: 8089
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+
+spring:
+  application:
+    name: service-report
+  cloud:
+    config:
+      profile: dev
+
+  data:
+    mongodb:
+      database: 'reportdb'
+      host: 'localhost'
+      port: 27017
+
+#Endpoints
+config:
+  base:
+    customer:
+      endpoint: http://localhost:8082/api/v1/customer
+    account:
+      endpoint: http://localhost:8083/api/v1/account
+    credit:
+      endpoint: http://localhost:8084/api/v1/credit
+    debitCard:
+      endpoint: http://localhost:8088/api/v1/debitCard
+
+#Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8087/eureka
+    #enabled: false
+
+#Endpoints Eureka URL
+config-eureka:
+  base:
+    customer:
+      endpoint: 'http://service-customer/api/v1/customer'
+    account:
+      endpoint: 'http://service-account/api/v1/account'
+    credit:
+      endpoint: 'http://service-credit/api/v1/credit'
+    debitCard:
+      endpoint: 'http://service-credit/api/v1/debitCard'
