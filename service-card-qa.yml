@@ -3,7 +3,7 @@ application:
     description: Profile Test
 
 server:
-  port: 9088
+  port: 9089
   error:
     include-message: always
     include-binding-errors: always
@@ -14,7 +14,7 @@ spring:
     name: service-card
   cloud:
     config:
-      profile: dev
+      profile: qa
 
   data:
     mongodb:

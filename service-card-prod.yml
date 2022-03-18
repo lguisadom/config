@@ -3,7 +3,7 @@ application:
     description: Production Test
 
 server:
-  port: 10088
+  port: 10089
   error:
     include-message: always
     include-binding-errors: always
@@ -14,7 +14,7 @@ spring:
     name: service-card
   cloud:
     config:
-      profile: dev
+      profile: prod
 
   data:
     mongodb:

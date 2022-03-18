@@ -3,7 +3,7 @@ application:
     description: Profile default
 
 server:
-  port: 8088
+  port: 8089
   error:
     include-message: always
     include-binding-errors: always

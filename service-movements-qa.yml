@@ -14,7 +14,7 @@ spring:
     name: service-movements
   cloud:
     config:
-      profile: dev
+      profile: qa
 
   data:
     mongodb:
