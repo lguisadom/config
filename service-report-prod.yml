@@ -52,3 +52,5 @@ config-eureka:
       endpoint: 'http://service-credit/api/v1/credit'
     debitCard:
       endpoint: 'http://service-card/api/v1/debitCard'
+    movement:
+      endpoint: 'http://service-movements/api/v1/movement'
