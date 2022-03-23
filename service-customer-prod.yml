@@ -18,9 +18,7 @@ spring:
 
   data:
     mongodb:
-      database: 'customerdb'
-      host: 'localhost'
-      port: 27017
+      uri: mongodb+srv://guisado:NakrF75eb7Ais6oH@clustermongo.ojl3e.mongodb.net/db
 
 #Eureka Client
 eureka:
