@@ -1,6 +1,6 @@
 application:
   config:
-    description: Production Test
+    description: Profile Production
 
 server:
   port: 10089

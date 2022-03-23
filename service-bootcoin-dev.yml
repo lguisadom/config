@@ -1,9 +1,9 @@
 application:
   config:
-    description: Profile Development
+    description: Profile desarrollo
 
 server:
-  port: 8082
+  port: 8091
   error:
     include-message: always
     include-binding-errors: always
@@ -11,13 +11,13 @@ server:
 
 spring:
   application:
-    name: service-customer
+    name: service-bootcoin
   cloud:
     config:
       profile: dev
   data:
     mongodb:
-      database: 'customerdb'
+      database: 'bootcoindb'
       host: 'localhost'
       port: 27017
 

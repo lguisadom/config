@@ -1,0 +1,39 @@
+application:
+  config:
+    description: Profile Production
+
+server:
+  port: 8091
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+
+spring:
+  application:
+    name: service-bootcoin
+  cloud:
+    config:
+      profile: dev
+
+  data:
+    mongodb:
+      database: 'bootcoindb'
+      host: 'localhost'
+      port: 27017
+
+#Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: https://bootcamp2022-ms-eureka.azurewebsites.net:443/eureka
+    #enabled: false
+  instance:
+    hostname: bootcamp2022-ms-bootcoin.azurewebsites.net
+    secure-port-enabled: true
+    nonsecure-port-enabled: false
+    nonSecurePort: 80
+    securePort: 443
+    statusPageUrl: https://${eureka.hostname}:443/actuator/info
+    healthCheckUrl: https://${eureka.hostname}:443/actuator/health
+    secureHealthCheckUrl: https://${eureka.hostname}:443/actuator/health
