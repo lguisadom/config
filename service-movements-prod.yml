@@ -18,9 +18,7 @@ spring:
 
   data:
     mongodb:
-      database: 'movementsdb'
-      host: 'localhost'
-      port: 27017
+      uri: mongodb+srv://guisado:NakrF75eb7Ais6oH@clustermongo.ojl3e.mongodb.net/db
 
 #Endpoints
 config:
@@ -36,7 +34,7 @@ config:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8087/eureka
+      defaultZone: https://bootcamp2022-ms-eureka.azurewebsites.net/eureka
     #enabled: false
 
 #Endpoints Eureka URL
