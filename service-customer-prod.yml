@@ -26,5 +26,11 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8087/eureka
+      defaultZone: https://bootcamp2022-ms-eureka.azurewebsites.net/eureka
     #enabled: false
+  instance:
+    hostname: bootcamp2022-ms-eureka.azurewebsites.net
+    secure-port-enabled: true
+    nonsecure-port-enabled: false
+    nonSecurePort: 80
+    securePort: 443
