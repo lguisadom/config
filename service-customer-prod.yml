@@ -24,7 +24,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: https://bootcamp2022-ms-eureka.azurewebsites.net/eureka
+      defaultZone: https://bootcamp2022-ms-eureka.azurewebsites.net:443/eureka
     #enabled: false
   instance:
     hostname: bootcamp2022-ms-eureka.azurewebsites.net
@@ -32,7 +32,7 @@ eureka:
     nonsecure-port-enabled: false
     nonSecurePort: 80
     securePort: 443
-    instanceId: ${eureka.instance.hostname}:${spring.application.name}
-    statusPageUrl: https://${eureka.instance.hostname}/actuator/info
-    healthCheckUrl: https://${eureka.instance.hostname}/actuator/health
-    secureHealthCheckUrl: https://${eureka.instance.hostname}/actuator/health
+    instanceId: ${eureka.instance.hostname}:${spring.application.name}:443
+    statusPageUrl: https://${eureka.instance.hostname}:443/actuator/info
+    healthCheckUrl: https://${eureka.instance.hostname}:443/actuator/health
+    secureHealthCheckUrl: https://${eureka.instance.hostname}:443/actuator/health
