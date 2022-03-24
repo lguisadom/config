@@ -20,15 +20,41 @@ spring:
       database: 'bootcoindb'
       host: 'localhost'
       port: 27017
-
+#redis cache
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+#kafka
 kafka:
   uri: '127.0.0.1:9092'
   topic:
     topicTransactionAcceptance: TOPIC-Transaction-Acceptance
 
+#Endpoints
+config:
+  base:
+    customer:
+      endpoint: http://localhost:8082/api/v1/customer
+    account:
+      endpoint: http://localhost:8083/api/v1/account
+    credit:
+      endpoint: http://localhost:8084/api/v1/credit
+      
 #Eureka Client
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8087/eureka
     #enabled: false
+
+#Endpoints Eureka URL
+config-eureka:
+  base:
+    customer:
+      endpoint: 'http://service-customer/api/v1/customer'
+    account:
+      endpoint: 'http://service-account/api/v1/account'
+    credit:
+      endpoint: 'http://service-credit/api/v1/credit'
