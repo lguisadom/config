@@ -31,6 +31,7 @@ kafka:
   uri: '127.0.0.1:9092'
   topic:
     topicTransactionAcceptance: TOPIC-Transaction-Acceptance
+    topicTransactionResult: TOPIC-Transaction-Result
 
 #Endpoints
 config:
