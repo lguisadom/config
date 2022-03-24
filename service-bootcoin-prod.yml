@@ -57,6 +57,7 @@ eureka:
     statusPageUrl: https://${eureka.hostname}:443/actuator/info
     healthCheckUrl: https://${eureka.hostname}:443/actuator/health
     secureHealthCheckUrl: https://${eureka.hostname}:443/actuator/health
+
 #Endpoints Eureka URL
 config-eureka:
   base:
