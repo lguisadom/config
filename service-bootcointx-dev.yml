@@ -1,0 +1,29 @@
+application:
+  config:
+    description: Profile desarrollo
+
+server:
+  port: 8092
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+
+spring:
+  application:
+    name: service-bootcointx
+  cloud:
+    config:
+      profile: dev
+  data:
+    mongodb:
+      database: 'bootcoindbtx'
+      host: 'localhost'
+      port: 27017
+
+#Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8087/eureka
+    #enabled: false
