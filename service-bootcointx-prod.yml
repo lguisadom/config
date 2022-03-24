@@ -63,3 +63,5 @@ config-eureka:
       endpoint: 'http://service-account/api/v1/account'
     credit:
       endpoint: 'http://service-credit/api/v1/credit'
+    movement:
+      endpoint: 'http://service-movements/api/v1/movement'
