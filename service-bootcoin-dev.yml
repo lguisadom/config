@@ -21,6 +21,11 @@ spring:
       host: 'localhost'
       port: 27017
 
+kafka:
+  uri: '127.0.0.1:9092'
+  topic:
+    topicTransactionAcceptance: TOPIC-Transaction-Acceptance
+
 #Eureka Client
 eureka:
   client:
